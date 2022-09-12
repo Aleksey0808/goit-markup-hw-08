@@ -1,0 +1,15 @@
+$main-color:#212121;
+$secondary-color: #757575;
+$active-color: #2196F3;
+$background-color: #2F303A;
+$background-btn: #188CE8;
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}

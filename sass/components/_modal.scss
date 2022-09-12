@@ -1,0 +1,231 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transform: scale(1);
+
+  transition: opacity $animation,
+  transform $animation;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__form {}
+
+  &__title {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  
+    color: #212121;
+    margin-bottom: 12px;
+  }
+
+  &__field {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    display: block;
+    
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  
+    color: #757575;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    position: relative;
+    outline: none;
+  
+    height: 40px;
+    width: 100%;
+    padding-left: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: border $animation;
+
+    &:focus {
+      border: 1px solid #2196F3;
+
+      &+.modal__icon {
+        fill: $active-color;
+        border-color: #2196F3;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    transform: translate(50% 50%);
+  }
+
+  &__bottom {
+    margin-bottom: 20px;
+  }
+
+  &__comments {
+    display: block;
+    
+    height: 120px;
+    width: 100%;
+    padding: 16px 12px;
+  
+    outline: none;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: border $animation;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+  
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+      border: 1px solid #2196F3;
+    }
+  }
+
+  &__treaty {
+    display: flex;
+    justify-content: center;
+  
+    color: #757575;
+    margin-bottom: 30px;
+    line-height: 1.71;
+  }
+
+  &__button {
+    display: block;
+    
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    min-width: 216px;
+  
+    cursor: pointer;
+    background: $active-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color $animation;
+  
+    padding: 10px 32px;
+    margin: 0 auto;
+
+    &:hover, &:focus {
+        background: $background-btn;
+      }
+  }
+}
+
+.close {
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+  
+    background: #FFF;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: fill $animation;
+
+    &:hover, &:focus {
+      fill: $active-color;
+    }
+  }
+
+  &__icon {}
+}
+
+.treaty {
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+    & a {
+        text-decoration: underline;
+        color: $active-color;
+      }
+  }
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:focus+.treaty__check {
+      box-shadow: 0px 0px 0px 1px $active-color;
+    }
+
+    &:checked+.treaty__check {
+      border-color: $active-color;
+      background-color: $active-color;
+      background-image: url("../images/svg/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-origin: border-box;
+      background-position: center;
+    }
+  }
+
+  &__check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 0 10px 0 0;
+  }
+
+  &__agree {
+    color: $secondary-color;
+  }
+}
