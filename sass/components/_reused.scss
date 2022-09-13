@@ -1,7 +1,18 @@
 .container {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0 15px 0 15px;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1170px) {
+    width: 1170px;
+  }
 }
 
 .menu__link--included {
@@ -35,7 +46,11 @@
 }
 
 .section {
-  padding: 94px 0;
+  padding: 90px 0;
+
+  @media (max-width: 1170px) {
+    padding: 60px 0;
+  }
 }
 
 .title {
@@ -45,6 +60,11 @@
   line-height: 1.2;
   text-align: center;
   margin: 0 0 50px 0;
+
+  @media (max-width: 1169px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 img {

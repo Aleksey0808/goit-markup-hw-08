@@ -9,18 +9,27 @@
 
 .hero {
   text-align: center;
-  padding: 200px 0;
+
+  @media (max-width: 1170px) {
+    padding: 118px 0;
+  }
+  
 
   &__title {
+    font-size: 44px;
+    line-height: 1.4;
     text-transform: uppercase;
     color: #fff;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
     letter-spacing: 0.06em;
   
     margin: 0 auto 30px auto;
-    max-width: 696px;
+    
+    @media (max-width: 1170px) {
+      font-size: 26px;
+      line-height: 1.6;
+      max-width: 360px;
+    }
   }
 
   &__button {
@@ -44,6 +53,10 @@
     &:hover, &:focus {
       background: $background-btn;
     }
+
+    @media (max-width: 1170px) {
+      min-width: 200px;
+    }
   }
 }
 
@@ -55,28 +68,44 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 1170px) {
+    max-width: 480px;
+  }
 }
 
 .benefits {
   padding: 94px 0 0 0;
 
+  @media (max-width: 1170px) {
+      padding: 60px 0 0 0;
+    }
+ 
+
   &__list {
-    display: flex;
-    column-gap: 30px;
+    // display: flex;
+    // column-gap: 30px;
   }
 
   &__item {
-    width: 270px;
+
+    @media (min-width: 480px) {
+      margin: 0 auto;
+    }
   }
 
   &__bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    
     height: 120px;
     background: #F5F4FA;
     margin: 0 0 30px 0;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -84,6 +113,10 @@
     font-weight: 700;
     line-height: 1;
     margin: 0 0 10px 0;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -93,6 +126,10 @@
 }
 
 .work {
+
+  @media (max-width: 1170px) {
+    display: none;
+  }
 
   &__list {
     display: flex;
@@ -134,22 +171,28 @@
   background: #F5F4FA;
 
   &__list {
-    display: flex;
-    column-gap: 30px;
   }
 
   &__item {
     text-align: center;
-    width: 270px;
-
+  
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
   }
 
   &__imag {
-    max-width: 100%;
     height: auto;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -179,16 +222,31 @@
 .company {
 
   &__list {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
+    // display: flex;
+    // justify-content: center;
+    // column-gap: 30px;
+
+    @media (min-width:480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: -15px;
+    }
+  }
+
+  &__item {
+
+    @media (min-width:480px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+      }
   }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

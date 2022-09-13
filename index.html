@@ -44,6 +44,16 @@
         </a>
       </li>
     </ul>
+
+    <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
+        <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+      </svg>
+    </button>
+
+    <div class="menu-conteiner"data-menu id="menu-container">Content</div>
+
   </div>
 </header>
 <main>
@@ -53,7 +63,7 @@
       <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
     </div>
 </section>
-<section class="benefits">
+ <section class="benefits">
   <div class="container">
     <ul class="benefits__list">
       <li class="benefits__item">
@@ -129,7 +139,7 @@
   </ul>
  </div> 
 </section>
-<section class="team section">
+ <section class="team section">
   <div class="container">
     <h2 class="team__title title">Наша команда</h2>
     <ul class="team__list">
@@ -275,8 +285,8 @@
       </li>
     </ul>
   </div>
-</section>
-<section class="company section">
+</section> 
+ <section class="company section">
   <div class="container">
     <h2 class="company__title title">Постійні клієнти</h2>
     <ul class="company__list">
@@ -324,9 +334,9 @@
       </li>
     </ul>
   </div>
-</section>
+</section> 
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
  <div class="container">
   <address class="address">
     <div class="footer__contacts">
@@ -391,7 +401,7 @@
     </form>
   </address>
  </div>
-</footer>
+</footer> -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="close__button" data-modal-close>
@@ -444,6 +454,7 @@
   </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
 
