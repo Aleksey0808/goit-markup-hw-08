@@ -3,14 +3,24 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    
+    @media (min-width: 480px) {
+      justify-content: center;
+      row-gap: 30px;
+    }
   }
 
-  &__item {}
+  &__item {
+  
+    @media (min-width: 480px) {
+       width: 100%;
+    }
+  }
 
   &__link {
-    display: block;
-    width: 370px;
+    // display: block;
+    
+    // width: 370px;
     background: #FFFFFF;
     transition: box-shadow $animation;
 
@@ -25,8 +35,11 @@
   }
 
   &__imag {
-    max-width: 100%;
     height: auto;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
   }
 
   &__thumb {
@@ -101,9 +114,14 @@
 
   &__list {
     display: flex;
-    justify-content: center;
-    column-gap: 8px;
+  
     margin: 0 0 50px 0;
+
+    @media (min-width: 480px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 8px 21px;
+    }
   }
 
   &__item {}

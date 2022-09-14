@@ -1,13 +1,17 @@
 .address {
-  display: flex;
   font-style: normal;
 
   @media (min-width: 480px) {
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
-  
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 60px;
+  }
 }
 
 /* footer-contacts */
@@ -98,8 +102,8 @@
 /* footer-subscribee */
 
 .footer__subscribee {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   color: #fff;
 }
@@ -131,15 +135,17 @@
     color: #fff;
 
     @media (min-width: 480px) {
-      width: 100%;
+      width: 450px;
       height: 50px;
-      margin: 0 0 10px 0;
+      margin: 0 0 20px 0;
     }
 
     
   }
 
   &__button {
+    
+
     position: relative;
     width: 200px;
   
@@ -162,6 +168,7 @@
       }
 
       @media (min-width: 480px) {
+        display: block;
         margin: 0 auto;
       }
   }
