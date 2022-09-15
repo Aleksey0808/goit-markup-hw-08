@@ -22,7 +22,7 @@
 
   &__contacts {
 
-    @media (min-width: 480px) {
+    @media (max-width: 767px) {
       margin: 0 0 60px 0;
     }
     // margin: 0 70px 0 0;
@@ -111,6 +111,7 @@
 .subscribee {
 
   &__label {
+    display: inline-block;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
