@@ -47,7 +47,6 @@
   &__link--included {
     color: $active-color;
   }
-
 }
 
 .contacts {
@@ -57,12 +56,15 @@
     color: #757575;
     transition: color $animation;
 
-    // & li:not(:last-child) {
-    //   margin: 0 50px 0 0;
-    // }
-
     @media (max-width: 767px) {
       display: none;
+    }
+
+    @media (min-width: 1170px) {
+      display: flex;
+      
+      align-items: center;
+      column-gap: 30px;
     }
   }
 
@@ -74,12 +76,11 @@
       font-weight: 500;
       letter-spacing: 0.02em;
       color: inherit;
-      
 
-      @media (min-width: 768px) {
+      @media (max-width: 1169px) {
         font-size: 12px;
         padding: 5px 0;
-      }
+        }
       }
 
       &:hover {
