@@ -18,7 +18,8 @@
 .menu__link--included {
   color: var(--active-color);
 
-  &::after {
+  @media (min-width: 768px) {
+    &::after {
     content: '';
     display: flex;
     position: absolute;
@@ -28,6 +29,8 @@
     width: 100%;
     height: 4px;
   }
+  }
+  
 }
 
 .logo {

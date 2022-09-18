@@ -11,6 +11,10 @@
 
   transition: opacity $animation,
   transform $animation;
+
+  @media (max-width: 767px) {
+    overflow-y: scroll;
+  }
 }
 
 .backdrop.is-hidden {
@@ -20,21 +24,24 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+ 
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media (min-width: 480px) {
-    width: 450px;
-    height: 609px;
+  @media (max-width: 767px) {
+    margin: 93px 15px;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
   }
 
   &__form {}
@@ -178,6 +185,10 @@
 
     &:hover, &:focus {
       fill: $active-color;
+    }
+
+    @media (max-width: 767px) {
+      
     }
   }
 
