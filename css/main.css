@@ -157,7 +157,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .menu {
     display: flex;
     align-items: center;
@@ -167,8 +167,6 @@ img {
 @media (max-width: 767px) {
   .menu {
     text-align: left;
-    font-size: 40px;
-    line-height: 1.17;
   }
 }
 @media (max-width: 767px) {
@@ -211,11 +209,6 @@ img {
   .contacts__list {
     display: flex;
     flex-direction: column-reverse;
-  }
-  .contacts__list :not(:first-child) {
-    font-size: 34px;
-    line-height: 1.17;
-    margin-bottom: 32px;
   }
 }
 @media (min-width: 768px) {
@@ -602,7 +595,7 @@ img {
 .treaty__input:checked + .treaty__check {
   border-color: #2196F3;
   background-color: #2196F3;
-  background-image: url("../images/svg/check.svg");
+  background-image: url("/images/svg/SVG/check.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
@@ -669,9 +662,7 @@ img {
 }
 @media (max-width: 767px) {
   .menu-conteiner.is-open {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    display: block;
     padding: 48px 40px;
   }
 }
