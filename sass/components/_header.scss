@@ -16,15 +16,14 @@
 .menu {
 
   @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
+    
     padding: 16px 0;
   }
   
   @media (max-width: 767px) {
       text-align: left;
-      // font-size: 40px;
-      // line-height: 1.17;
+      font-size: 40px;
+      line-height: 1.17;
     }
 
   &__list {
@@ -78,12 +77,6 @@
     @media (max-width: 767px) {
       display: flex;
       flex-direction: column-reverse;
-
-      & :not(:first-child) {
-      // font-size: 34px;
-      // line-height: 1.17;
-      // margin-bottom: 32px;
-    }
     }
 
     @media (min-width: 768px) {
@@ -96,9 +89,20 @@
       align-items: center;
       column-gap: 30px;
     }
+
   }
 
   &__item {
+
+    @media (max-width:767px) {
+      &:last-child {
+        font-size: 34px;
+        line-height: 1.17;
+        margin-bottom: 32px;
+        color: $active-color;
+      }
+    }
+    
 
     & a {
       display: flex;
