@@ -27,6 +27,7 @@
           </li>
         </ul>
       </nav>
+     <div>
       <ul class="contacts__list">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -51,6 +52,7 @@
         <li class="mobile-social__link"><a href="">Facebook</a></li>
         <li class="mobile-social__link"><a href="">LinkedIn</a></li>
       </ul>
+     </div>
     </div>
     <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
       <svg width="24" height="16" aria-label="Переключатель мобильного меню">
@@ -123,7 +125,13 @@
   <ul class="work__list">
     <li class="work__item">
       <div class="work__thumb">
-        <img class="work__imag" src="./images/gallery/img1.jpg" width="370" alt="programming">
+        <img class="work__imag" 
+        srcset="
+        ./images/gallery/img1.jpg 1x
+        ./images/gallery/img1.jpg 2x"
+        src="./images/gallery/img1.jpg" 
+        width="370" 
+        alt="programming">
         <div class="work__subtitle"><p>Десктопні додатки</p></div>
       </div>
       

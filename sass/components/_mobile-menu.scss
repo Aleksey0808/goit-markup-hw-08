@@ -49,9 +49,12 @@
 
   @media (max-width: 767px) {
     &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     padding: 48px 40px;
+    
     
   }
   }
