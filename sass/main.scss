@@ -68,19 +68,18 @@
 .hero--bg {
   max-width: 1600px;
   margin: 0 auto;
-  background: #C4C4C4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url("../images/hero/hero-bg-1600px1x.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-
-  @media (max-width: 480px) {
-    max-width: 480px;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 768px;
-  }
+  
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url("../images/hero/hero-bg-1600px2x.jpg");
+}
 }
 
 .benefits {
