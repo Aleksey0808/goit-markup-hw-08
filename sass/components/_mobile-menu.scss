@@ -58,12 +58,6 @@
     
   }
   }
-
-  &.is-open {
-    // display: flex;
-    // flex-direction: column;
-  
-  }
 }
 
 // mobile-social
@@ -72,9 +66,9 @@
 
   &__list {
     margin: 0 -10px 0 -10px;
+    
   @media (max-width: 767px) {
       display: flex;
-      // column-gap: 20px;
       margin: 0 -10px 0 -10px;
     }
 

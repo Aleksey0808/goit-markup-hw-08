@@ -43,9 +43,7 @@
     width: 528px;
     height: 581px;
   }
-
-  &__form {}
-
+  
   &__title {
     text-align: center;
 
@@ -186,13 +184,7 @@
     &:hover, &:focus {
       fill: $active-color;
     }
-
-    @media (max-width: 767px) {
-      
-    }
   }
-
-  &__icon {}
 }
 
 .treaty {

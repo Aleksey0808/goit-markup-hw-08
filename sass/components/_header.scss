@@ -5,6 +5,7 @@
   &__wrapper {
     display: flex;
     align-items: center;
+
     @media (max-width: 767px) {
       display: flex;
       justify-content: space-between;
@@ -22,7 +23,6 @@
       text-align: left;
       font-size: 40px;
       line-height: 1.17;
-      // height: 75%;
     }
 
   &__list {
@@ -30,14 +30,14 @@
     & li:not(:last-child) {
       @media (max-width: 767px) {
        margin: 0 0 35px 0;
-    }
+      }
     }
     
       
     @media (min-width: 768px) {
       display: flex;
       column-gap: 50px;
-    }
+      }
     }
 
   &__item {

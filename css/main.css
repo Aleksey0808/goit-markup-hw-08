@@ -588,6 +588,7 @@ img {
 .close__button:hover, .close__button:focus {
   fill: #2196F3;
 }
+
 .treaty__label {
   display: flex;
   align-items: center;
@@ -692,6 +693,7 @@ img {
     padding: 48px 40px;
   }
 }
+
 .mobile-social__list {
   margin: 0 -10px 0 -10px;
 }
