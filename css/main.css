@@ -160,14 +160,10 @@ img {
   .header__wrapper {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1169px) {
-  .menu {
     padding: 16px 0;
   }
 }
+
 @media (max-width: 767px) {
   .menu {
     text-align: left;
@@ -777,8 +773,34 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-1600px1x.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (max-width: 767px) {
+  .hero--bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-480px1x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero--bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-480px2x.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .hero--bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-768px1x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero--bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-768px2x.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .hero--bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-1600px1x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero--bg {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-1600px2x.jpg");
   }
