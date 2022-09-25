@@ -619,7 +619,7 @@ img {
 .treaty__input:checked + .treaty__check {
   border-color: #2196F3;
   background-color: #2196F3;
-  background-image: url("/images/svg/SVG/check.svg");
+  background-image: url("../images/svg/SVG/check.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
