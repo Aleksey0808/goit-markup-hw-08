@@ -9,7 +9,7 @@
     @media (max-width: 767px) {
       display: flex;
       justify-content: space-between;
-      padding: 16px 0;
+      padding: 16px 15px;
     }
   }
 }
@@ -92,6 +92,8 @@
   &__item {
 
     @media (max-width:767px) {
+      color: $secondary-color;
+      
       &:last-child {
         font-size: 34px;
         line-height: 1.17;
